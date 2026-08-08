@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulsamad Ibrahim — Research Engineer</title>
+<meta name="description" content="Portfolio of Abdulsamad Ibrahim — Research Engineer and ML Engineer building multimodal deep learning systems and real-time neural data infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">A.I.</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#credentials">Education</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="top" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">// signal &rarr; insight</p>
+      <h1>Abdulsamad<br>Ibrahim</h1>
+      <p class="hero-role">Research Engineer &middot; ML Engineer &middot; Data Scientist</p>
+      <p class="hero-sub">Currently a Research Assistant at the Institute of Neuroscience, CAS, and a graduate researcher at USTC — building multimodal deep learning systems for gesture and sign-language recognition, real-time neural data acquisition, and low-latency signal processing.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See the work</a>
+        <a href="https://github.com/Abduls100" class="btn btn-ghost" target="_blank" rel="noopener">GitHub &#8599;</a>
+      </div>
+    </div>
+
+    <svg class="wave" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+      <path class="wave-path wave-back"
+        d="M0,110 L40,113 L80,108 L120,112 L160,95 L200,135 L240,109 L280,110 L320,98 L360,124 L400,110 L440,111 L480,90 L520,132 L560,110 L600,109 L640,112 L680,100 L720,120 L760,110 L800,110 L840,95 L880,128 L920,110 L960,109 L1000,113 L1040,102 L1080,118 L1120,110 L1160,110 L1200,110" />
+      <path class="wave-path wave-front"
+        d="M0,100 L40,105 L80,95 L120,102 L160,60 L200,140 L240,98 L280,100 L320,70 L360,130 L400,100 L440,101 L480,55 L520,145 L560,100 L600,99 L640,102 L680,75 L720,125 L760,100 L800,100 L840,65 L880,135 L920,100 L960,98 L1000,103 L1040,90 L1080,110 L1120,100 L1160,100 L1200,100" />
+    </svg>
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark">About</p>
+      <div class="about-grid">
+        <!-- Replace assets/profile.jpg with your headshot. Until then this shows an "AI" placeholder. -->
+        <div class="about-photo">
+          <img src="assets/profile.jpg" alt="Photo of Abdulsamad Ibrahim" onerror="this.style.display='none'">
+          <div class="about-photo-fallback">AI</div>
+        </div>
+        <p class="about-text">
+          I'm Abdulsamad — a deep learning research engineer with hands-on experience designing, training, and optimizing multimodal AI models, including a CNN+Transformer hybrid architecture, alongside real-time data-acquisition systems and low-latency signal processing in C++ and MATLAB. My work sits at the intersection of machine learning and experimental neuroscience: I build both the models and the infrastructure that captures the data they learn from. I'm comfortable across the full PyTorch/TensorFlow pipeline, down to kernel-level diagnostics and Docker-based deployment, and I'm currently completing an M.Sc. in Computer Technology at the University of Science and Technology of China. I communicate professionally in English and Mandarin (HSK 3), and fluently in Yoruba and Hausa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark">Experience</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <p class="timeline-date">Apr 2026 &ndash; Present</p>
+          <h3>Research Assistant Intern</h3>
+          <p class="timeline-org">Lab of Neural Dynamics of Visual Perception &amp; Cognition, ICPBR/CEBSIT, CAS &middot; Shanghai</p>
+          <ul class="timeline-list">
+            <li>Configured NI instruments and integrated MonkeyLogic across Windows and Ubuntu for neural data acquisition.</li>
+            <li>Cut camera data-transmission latency from 48ms to 16ms in MATLAB, then to 4ms (250Hz) with a custom C++ receiver.</li>
+            <li>Built a GPIO-triggered video synchronization system (&le;12ms latency) on an NI PCIe-6321 card, resolving a kernel-level driver fault during a Raspberry Pi &rarr; DAQ migration.</li>
+            <li>Maintained Python/MATLAB scripts for experimental control and preprocessing, plus backup and storage-reliability protocols for the lab's computing infrastructure.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <p class="timeline-date">Oct 2024 &ndash; June 2026</p>
+          <h3>Graduate Researcher — Multimodal Gesture Recognition</h3>
+          <p class="timeline-org">Embedded Systems and IoT Research Group, School of Computer Science and Technology, USTC</p>
+          <ul class="timeline-list">
+            <li>Designed and trained a Hybrid SqueezeFormer (CNN+Transformer) and a pure Transformer architecture for 250-class isolated sign-language classification.</li>
+            <li>Reached ~90% top-1 / 98% top-5 accuracy at 922K parameters — about 3&times; smaller and 2&times; faster to train than a 2.7M-parameter baseline (85.12% / 96.88%).</li>
+            <li>Built the full inference pipeline: landmark extraction &rarr; temporal standardization &rarr; classification &rarr; sentence reconstruction &rarr; LLM-based refinement &rarr; English speech output.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <p class="timeline-date">Mar 2023 &ndash; Aug 2023</p>
+          <h3>System Support Engineer</h3>
+          <p class="timeline-org">Dufil Prima Foods Limited &middot; Lagos, Nigeria</p>
+          <ul class="timeline-list">
+            <li>Achieved an 80% user-experience rating supporting staff and expatriates across departments.</li>
+            <li>Supplied real-world CCTV footage to a partner AI team building an accident-prevention system.</li>
+            <li>Installed and configured Sophos routers and Ubiquiti/TP-Link switches; managed VMware servers with monthly backups sustaining 99% data availability.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark">Projects</p>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>GISLR&ndash;ASL Recognition</h3>
+          <p>Hybrid SqueezeFormer and pure Transformer architectures for 250-class isolated sign-language classification from video-derived landmark features, with a full inference pipeline from raw video through to English speech output. Production-optimized model: ~90% top-1 / 98% top-5 accuracy at 922K parameters.</p>
+          <ul class="tags">
+            <li>PyTorch</li>
+            <li>Transformers</li>
+            <li>SqueezeFormer</li>
+            <li>MediaPipe</li>
+          </ul>
+          <a href="https://github.com/Abduls100/GISLR-ASL-Recognition" class="link-arrow" target="_blank" rel="noopener">View repository &rarr;</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Real-Time Signal Latency Optimization</h3>
+          <p>Diagnosed and resolved major data loss between a signal station and receiver, optimizing a MATLAB pipeline from 48ms to 16ms, then implementing a C++ receiver-side solution reaching a 4ms target (250Hz) — latency-critical troubleshooting for a real-time data pipeline.</p>
+          <ul class="tags">
+            <li>C++</li>
+            <li>MATLAB</li>
+            <li>Real-Time Systems</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>NeuroCam</h3>
+          <p>End-to-end video capture and synchronization pipeline integrating an NI-DAQ digital trigger, RTSP/FFmpeg streaming, and a 4MP HD camera; validated on real 5V hardware triggers across long sessions with &le;12ms trigger-to-record latency and no observed data loss.</p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>NI-DAQ</li>
+            <li>RTSP/FFmpeg</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Abduls100/neuro_gpio_recorder" class="link-arrow" target="_blank" rel="noopener">GPIO recorder &rarr;</a>
+            <a href="https://github.com/Abduls100/Neurocam_NI_DAQ_migration" class="link-arrow" target="_blank" rel="noopener">NI-DAQ migration &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark">Skills</p>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Machine Learning &amp; AI</h3>
+          <ul class="tags">
+            <li>PyTorch</li>
+            <li>TensorFlow/Keras</li>
+            <li>scikit-learn</li>
+            <li>XGBoost</li>
+            <li>CNNs</li>
+            <li>Transformers</li>
+            <li>RNNs</li>
+            <li>Reinforcement Learning</li>
+            <li>LLM-Assisted Pipelines</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Data &amp; Scientific Computing</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>SQL</li>
+            <li>MATLAB</li>
+            <li>OpenCV</li>
+            <li>MediaPipe</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Systems &amp; Real-Time Engineering</h3>
+          <ul class="tags">
+            <li>C++</li>
+            <li>Kernel-Level Diagnostics</li>
+            <li>GPIO / NI-DAQ</li>
+            <li>Real-Time Pipelines</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Infrastructure &amp; Deployment</h3>
+          <ul class="tags">
+            <li>Docker</li>
+            <li>Linux/Ubuntu</li>
+            <li>Windows</li>
+            <li>Backup &amp; Storage Reliability</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="credentials" class="credentials">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark">Education &amp; Credentials</p>
+      <div class="credentials-grid">
+
+        <div class="credential-card">
+          <h3>Education</h3>
+          <p class="credential-item"><strong>M.Sc. Computer Technology</strong><br>University of Science and Technology of China, Hefei<br><span class="credential-date">Sept 2023 &ndash; June 2026</span></p>
+          <p class="credential-item"><strong>B.Eng. Electrical &amp; Electronics Engineering</strong><br>Kebbi State University of Science and Technology, Nigeria<br><span class="credential-date">Oct 2015 &ndash; Aug 2021 &middot; Second Class Upper</span></p>
+        </div>
+
+        <div class="credential-card">
+          <h3>Publication</h3>
+          <p>Mehmood, M.H., Khan, M.I., &amp; Ibrahim, A. (2024). &ldquo;Balancing Privacy and Accuracy: Federated Learning with Differential Privacy for Medical Image Data.&rdquo; <em>IEEE International Conference on Data Science and Information Technology (DSIT)</em>, Nanjing, China, pp. 1&ndash;6.</p>
+        </div>
+
+        <div class="credential-card">
+          <h3>Certifications</h3>
+          <ul class="credential-list">
+            <li>Associate Data Scientist in Python &mdash; DataCamp</li>
+            <li>Machine Learning Scientist &mdash; DataCamp</li>
+            <li>Career Essentials in Generative AI &mdash; Microsoft &amp; LinkedIn</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="connect" class="connect">
+    <div class="section-inner">
+      <p class="eyebrow">Let's collaborate</p>
+      <h2>Open to research &amp; engineering<br>collaboration in neuroscience, medical<br>imaging, and BCI.</h2>
+      <div class="connect-links">
+        <a href="mailto:ibrahimabdulsamad033@gmail.com">Email &#8599;</a>
+        <a href="https://github.com/Abduls100" target="_blank" rel="noopener">GitHub &#8599;</a>
+        <a href="https://www.linkedin.com/in/abdulsamad-ibrahim/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+        <a href="https://orcid.org/0009-0007-3711-086X" target="_blank" rel="noopener">ORCID &#8599;</a>
+        <a href="https://twitter.com/Abdusonline" target="_blank" rel="noopener">Twitter &#8599;</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Abdulsamad Ibrahim. Built with HTML &amp; CSS, deployed on GitHub Pages.</p>
+</footer>
+
+</body>
+</html>
